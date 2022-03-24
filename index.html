@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="all.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id='canvas'>
+  <!-- SVG 提供一個 text 標籤來繪製文字 -->
+  <svg id='tooltip'>
+    <!-- x：文字左上角的 X 座標 -->
+    <!-- y：文字左上角的 Y 座標 -->
+    <!-- text-anchor：middle - 文字置中 -->
+    <!-- fill：圖形內部顏色 -->
+    <!-- stroke：圖形邊框顏色 -->
+    <!-- stroke-width：圖形邊框寬度 -->
+    <text x='50%' y='50%' style='text-anchor: middle;'></text>
+  </svg>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="all.js"></script>
+</body>
+</html>
